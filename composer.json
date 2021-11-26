@@ -1,0 +1,42 @@
+{
+    "name": "linksoft/sms",
+    "license": "MIT",
+    "type": "linksoft-plugin",
+    "description": "Common SMS Driver",
+    "keywords": [
+        "LinkSoft",
+        "SMS"
+    ],
+    "authors": [
+        {
+            "name": "LinkSoft Development Corporation",
+            "homepage": "https://www.linksoft.cn"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0",
+        "hyperf/guzzle": "~2.2.0",
+        "psr/log": "^1.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "LinkSoft\\Sms\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LinkSoftTest\\Sms\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "hyperf": {
+            "config": "LinkSoft\\Sms\\ConfigProvider"
+        }
+    }
+}
