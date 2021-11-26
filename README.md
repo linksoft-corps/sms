@@ -1,5 +1,5 @@
-# utils
+# sms utils
 
-LinkTrade 工具包
+LinkTrade Hyperf 短信工具包
 
-统一微服务体系中定义公共方法
+目前支持 阿里云短信、创蓝短信、Link短信、AccessYou短信
