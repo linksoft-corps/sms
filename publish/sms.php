@@ -16,14 +16,30 @@ return [
     ],
     'aliyun' => [
         'driver' => LinkSoft\Sms\Adapter\SmsAliyun::class,
+        'api' => '',
+        'sign' => '',
+        'accessId' => '',
+        'templateId' => '',
+        'regionId' => '',
     ],
     'access' => [
         'driver' => LinkSoft\Sms\Adapter\SmsAccess::class,
+        'api' => '',
+        'username' => '',
+        'password' => ''
     ],
     'link' => [
         'driver' => LinkSoft\Sms\Adapter\SmsLink::class,
+        'api' => '',
+        'username' => '',
+        'password' => '',
+        'code' => '',
+        'sign' => '',
     ],
     '253' => [
         'driver' => LinkSoft\Sms\Adapter\Sms253::class,
+        'api' => '',
+        'username' => '',
+        'password' => ''
     ]
 ];
