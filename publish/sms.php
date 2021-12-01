@@ -13,33 +13,26 @@ declare(strict_types=1);
 return [
     'default' => [
         'driver' => LinkSoft\Sms\Adapter\SmsDev::class,
-    ],
-    'aliyun' => [
-        'driver' => LinkSoft\Sms\Adapter\SmsAliyun::class,
-        'api' => '',
-        'sign' => '',
-        'accessId' => '',
-        'templateId' => '',
-        'regionId' => '',
+        'api' => env('SMS_DEV_CHANNEL_API'),
     ],
     'access' => [
         'driver' => LinkSoft\Sms\Adapter\SmsAccess::class,
-        'api' => '',
-        'username' => '',
-        'password' => ''
+        'api' => env('SMS_ACCESS_CHANNEL_API'),
+        'username' => env('SMS_ACCESS_CHANNEL_USER'),
+        'password' => env('SMS_ACCESS_CHANNEL_PASS')
     ],
     'link' => [
         'driver' => LinkSoft\Sms\Adapter\SmsLink::class,
-        'api' => '',
-        'username' => '',
-        'password' => '',
-        'code' => '',
-        'sign' => '',
+        'api' => env('SMS_LINK_CHANNEL_API'),
+        'username' => env('SMS_LINK_CHANNEL_USER'),
+        'password' => env('SMS_LINK_CHANNEL_PASS'),
+        'code' => env('SMS_LINK_CHANNEL_CODE'),
+        'sign' => env('SMS_LINK_CHANNEL_SIGN'),
     ],
     '253' => [
         'driver' => LinkSoft\Sms\Adapter\Sms253::class,
-        'api' => '',
-        'username' => '',
-        'password' => ''
+        'api' => env('SMS_253_CHANNEL_API'),
+        'username' => env('SMS_253_CHANNEL_USER'),
+        'password' => env('SMS_253_CHANNEL_PASS')
     ]
 ];
